@@ -1,0 +1,912 @@
+:root {
+    --main-background-color-1: #ffff;
+    --main-background-color-2: #000000;
+    --main-first-color-1: #1d75de;
+    --main-first-color-2: #7fda3a;
+    --main-background-color-3: #efefef;
+
+
+}
+
+@font-face {
+    font-family: 'SpotifyBlack';
+    src: url('./circular-spotify-text-font/CircularSpotifyText-Black.otf');
+    
+}
+
+@font-face {
+    font-family: 'SpotifyBook';
+    src: url(./circular-spotify-text-font/CircularSpotifyText-Book.otf);
+}
+
+@font-face {
+    font-family: 'SpotifyBlackItalic';
+    src: url('./circular-spotify-text-font/CircularSpotifyText-BlackItalic.otf');
+}
+
+@font-face {
+    font-family: 'SpotifyLight';
+    src: url(./circular-spotify-text-font/CircularSpotifyText-Light.otf);
+}
+
+@font-face {
+    font-family: 'SpotifyMedium';
+    src: url(./circular-spotify-text-font/CircularSpotifyText-Medium.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    position: relative;
+    top: 0;
+    line-height: 1.5;
+    min-height: 54px;
+    background-color: var(--main-background-color-2);
+    font-family: SpotifyMedium;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 1550px;
+    height: 80px;
+    z-index: 1020;
+    display: flex;
+    justify-content: right;
+
+}
+
+body {
+    color: var(--main-background-color-1);
+    height: auto;
+    
+}
+
+div {
+    display: block;
+}
+
+footer {
+    display: flex;
+    
+}
+
+
+.HeaderContainer {
+    
+    
+    justify-content: space-around;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 79px;
+
+}
+
+.navcontainer {
+    
+    justify-content: right;
+
+}
+
+.navbarr ul {
+    justify-content: right;
+    
+    max-height: 100%;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+
+}
+
+.navbarr ul li {
+    
+    display:flex;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 22px;
+    
+}
+
+.navbarr a:hover {
+    color: #1ed760;
+}
+
+.navbarr a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.HeaderSpan {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.HeaderSpan img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px 0px 3px;
+    
+    
+}
+
+.HeadHeader {
+    margin-right: 450px;
+    margin-top: 10px;
+    
+
+}
+
+.ObtenP2 {
+    max-width: 1550px;
+    height: 365px;
+    text-align: left;
+    background-color: var(--main-first-color-1);
+    display: block;
+    font-family: SpotifyBlack;
+    
+}
+
+.ObtenP2 article {
+    width: 750px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 140px;
+    min-height: 0px;
+    text-align: left;
+    max-width: 100%;
+    margin: 0px 89.5px 0px 89.5px;
+    
+}
+
+.ObtenHead {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+.ObtenHead2 {
+    padding-top: 72px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: block;
+    text-align: inherit;
+}
+
+.ObtenHead2 h1 {
+    line-height: 1.2;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 900;
+    max-width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-block: 0px;
+    color: inherit;
+    width: auto;
+    font-size: 40px;
+    line-height: 1.25rem;
+    font-weight: 400;
+    
+}
+
+.ObtenHead2 h2 {
+    box-sizing: border-box;
+    margin-top: 30px;
+    line-height: 1.5;
+    margin: 15px, ;
+    padding: 72px, 0px, 40px, 0px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 100%;
+    color: inherit;
+    
+    font-family: 'SpotifyBook';
+}
+
+.ObtenButtons {
+    display: flex;
+    margin-top: 45px;
+}
+
+.ButtonEmpezar span{
+    border: 2px solid black;
+    background-color: #000000;
+    border-radius: 500px;
+    padding-block: 14px;
+    padding-inline: 32px;
+}
+
+.ButtonPlanes span{
+    border: 2px solid white;
+    border-radius: 500px;
+    padding-block: 14px;
+    padding-inline: 32px
+}
+
+.ObtenP2Footer{
+    text-align: inherit;
+    display: block;
+    font-size: 12px;
+    margin-top: 60px;
+    width: 100%;
+    font-family: 'SpotifyLight';
+}
+
+.ObtenerP2Footer p {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    letter-spacing: normal;
+    text-decoration: none;
+    position: absolute;
+
+}
+
+.SectionPorque {
+    
+    background: var(--main-background-color-1);
+    display: flex;
+    justify-content: center;
+    
+    height: 598.59px;
+    width: auto;
+}
+
+.SectionPorque article {
+    
+    
+    
+    
+    padding: 75px 15px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+
+}
+
+.HeaderPorque {
+
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 72px;
+    
+    
+}
+
+.HeaderPorque h2 {
+    color: var(--main-background-color-2);
+    margin: 0px 235px;
+    max-width: 670px;
+    margin-top: 0px;
+    letter-spacing: -0.015em;
+    font-weight: 900;
+    padding: 0px 15px;
+    font-family: 'SpotifyBlack';
+    font-size: 40px;
+}
+
+.HeaderPorqueUl {
+    list-style: none;
+    text-align: left;
+    color: var(--main-background-color-2);
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    
+}
+
+.HeaderPorqueLi {
+    margin-bottom: 20px;
+    margin-right: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+
+.HeaderPorqueLiImg {
+    background-image: url(./assets/Logo1.png);
+    display: flex;
+    background-position: center;
+    width: 142px;
+    height: 142px;
+    margin: 0 71.500px 40px;
+    
+}
+
+.HeaderPorqueLiImg2 {
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137);
+    display: inline-block;
+    background-position: center;
+    width: 142px;
+    height: 142px;
+    margin: 0 71.500px 40px;
+}
+
+.HeaderPorqueLiImg3 {
+    background-image: url(./assets/logo3.png);
+    display: inline-block;
+    background-position: center;
+    width: 142px;
+    height: 142px;
+    margin: 0 71.500px 40px;
+}
+
+.HeaderPorqueLiImg4 {
+    background-image: url(./assets/logo4.png);
+    display: inline-block;
+    background-position: center;
+    width: 142px;
+    height: 142px;
+    margin: 0 71.500px 40px;
+}
+
+.HeaderPorqueLi p{
+
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 21px;
+    padding: 0px;
+    line-height: 1.3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 285px;
+    height: 27.29px;
+    font-family: 'SpotifyBlack';
+    font-size: large;
+    font-weight: bolder;
+    
+
+}
+
+.SectionEligePlan {
+
+       
+       overflow: auto;
+       background-color: var(--main-background-color-3);
+       
+       display: flex;
+       justify-content: space-around;
+       width: 100%;
+       height: 1104.160px;
+       
+
+
+    
+}
+
+.SectionEligePlan article {
+    margin: 0px 89.500px;
+    padding: 75px 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    color: #000000;
+    text-align: left;
+    
+    
+}
+
+.SectionEligePlan h2 {
+    
+    text-align: center;
+    font-size: 32px;
+    font-family: 'SpotifyBlack';
+    font-size:36px;
+
+}
+
+.SectionEligePlan h3 {
+    
+    text-align: center;
+    margin: 10px 0px;
+    font-family: 'SpotifyLight';
+    font-size:  17px;
+    
+
+}
+
+.ImagenesLogos {
+    display: flex;
+    justify-content: center;
+}
+.ImagenesLogos ul {
+ 
+ display: flex;
+ justify-content: center;
+ list-style: none;
+ margin-top: 16px;
+ width: 1140px;
+ height: 22.156px;
+ 
+
+}
+
+.LogosPagos{
+    display: inline-block;
+    margin-right: 7px;
+
+}
+
+.VisaImg {
+    background-image: url(https://content-tooling.spotifycdn.com/images/ff1575f9-2d06-4af8-be2a-15e07ad75076_visa.svg);
+    width: 29px;
+    height: 20px;
+    
+}
+
+.MasterLogo {
+    background-image: url(https://content-tooling.spotifycdn.com/images/e17e480f-693a-4b50-af71-ac1d44114b60_mastercard.svg);
+    width: 29px;
+    height: 20px;
+    
+}
+
+.AmexLogo {
+    background-image: url(https://content-tooling.spotifycdn.com/images/c606ca93-e0df-4eee-baf0-12df8671cfea_amex.svg);
+    width: 29px;
+    height: 20px;
+    
+}
+
+.PayLogo {
+    background-image: url(./assets/PayPalLogo.png);
+    width: 29px;
+    height: 20px;
+    
+}
+
+.OxxoLogo {
+    background-image: url(./assets/OxxoLogo.svg);
+    width: 29px;
+    height: 20px;
+}
+
+.AtntLogo {
+    background-image: url(./assets/Atnt.svg);
+    width: 29px;
+    height: 20px;
+    
+}
+
+.PremiumGrid {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 25px 0px 26px;
+    
+   
+}
+
+.PremiumGrid1 {
+    
+    margin: 0px 16px 0px 0px;
+    width: 265px;
+    height: 210px;
+    
+    border-radius: 10px 10px 0px 0px;
+    padding: 16px 16px 0px 16px;
+    background-color: var(--main-background-color-1);
+    
+}
+
+.PremiumGrid1 ul {
+    list-style: none;
+    width: 218px;
+    height: 68px;
+    
+}
+
+.PremiumGrid1 li {
+    width: 220.469px;
+    height: 25px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+    margin: 0px 4px 10px 0px;
+    margin-block: 0px 10px;
+    font-family: 'SpotifyBlack';
+    display: inline-block;
+    font-weight: 900;
+}
+
+
+
+.PremiumGrid1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: 'SpotifyBlack';
+    
+
+}
+
+.PremiumGrid1P1 {
+    margin-bottom: 2px;
+    
+    font-family: 'SpotifyLight';
+    
+
+}
+
+.PremiumGrid1P2 {
+    margin-bottom: 20px;
+    
+    font-family: 'SpotifyLight';
+
+}
+
+.PremiumGrid2 {
+    list-style: none;
+    background-color: var(--main-background-color-1);
+    
+    width: 265px;
+    height: 333px;
+    padding: 20px 16px 16px 16px;
+}
+.PremiumGrid2li {
+    display: flex;
+    margin-bottom: 5px;
+    list-style: none;
+    width: 230px;
+    font-family: 'SpotifyLight';
+    
+}
+.PremiumGrid2svg {
+    display: inline-block;
+    color: var(--main-background-color-2);
+    padding: 0px 10px 0px 0px;
+}
+
+.PremiumGridButton {
+    width: 265px;
+    height: 48px;
+    
+    padding: 0px 16px 0px 16px;
+    margin: 0px 16px 0px 0px;
+    text-align: center;
+    background-color: var(--main-background-color-1);
+}
+
+.PremiumGridButton a {
+    box-sizing: border-box;
+    
+    width: 237px;
+    height: 48px;
+    background-color: transparent;
+    color: var(--main-background-color-1);
+    text-decoration: none;
+}
+
+.PremiumGridButtonInner {
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    padding: 14px 32px;
+    border-radius: 500px;
+    font-size: inherit;
+    padding-inline: 32px;
+    padding-block: 14px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-background-color-2);
+    color: var(--main-background-color-1);
+    font-family: 'SpotifyMedium';
+}
+
+.PremiumGridTerminos {
+    font-family: 'SpotifyLight';
+    font-size: 12px;
+    
+    width: 265px;
+    height: 150px;
+    background-color: var(--main-background-color-1);
+    color: rgb(83, 83, 83);
+    padding: 4px 16px 16px 16px;
+    margin: 0px 16px 16px 0px;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.PremiumGridTerminos a {
+    color: rgb(83, 83, 83);
+}
+
+.PremiumGridTerminos p {
+    margin-top: 12px;
+    color:rgb(83, 83, 83);
+}
+
+.SectionFooter {
+    height: 554px;
+    width: 1349x;
+    background-color: var(--main-background-color-2);
+}
+
+.SectionFooter footer {
+    width: auto;
+    height: auto;    
+    display: felx;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.FooterNav {
+    width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.HeadHeader1 {
+    
+    box-sizing: border-box;
+    width: 170px;
+    display: flex;
+    padding: 0px 15px 0px 10px;
+    font-weight: 400;
+    height: 346px;
+    
+    
+}
+
+.FooterDescripcion {
+    
+    display: flex;
+    width: 585px;
+    height: 346px;
+
+}
+
+.FooterDescripcion dl{
+
+    padding: 0px 10px 0px 15px;
+
+}
+
+.FooterDescripcion dt {
+    font-family: 'SpotifyBlack';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    display: block;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+.FooterDescripcion dd {
+    display: block;
+    margin-inline-start: 20px;
+    margin-inline-end: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.FooterDescripcion a {
+    font-family: 'SpotifyLight';
+    text-decoration: none;
+    color: var(--main-background-color-1);
+    padding: 3px 0px 15px 0px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.FooterDescripcion a:hover {
+    color: #1ed760;
+}
+
+
+
+
+.SocialMedia {
+    
+    
+    width: 198px;
+    height: 346px;
+    margin: 0px 15px 0px 183px;
+    display: inline-flex;
+    
+}
+
+.SocialMedia ul li a svg:hover {
+    background-color: #1ed760;
+}
+
+.SocialMedia ul {
+    margin-top: 17px;
+    width: 203px;
+    height: 54px;
+    
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+.SocialMedia li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.SocialMediaInstagram {
+   background-color: #222326;
+   border-radius: 50%;
+   width: 54px;
+   height: 54px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.SocialMediaTwitter {
+   background-color: #222326;
+   border-radius: 50%;
+   width: 54px;
+   height: 54px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+
+.SocialMediaFacebook {
+    background-color: #222326;
+   border-radius: 50%;
+   width: 54px;
+   height: 54px;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.instagramlogo {
+    
+    width: 24px;
+    height: 24px;
+    
+    
+}
+
+.instagramlogo svg {
+    background-color: var(--main-background-color-3);
+}
+
+.twitterlogo {
+    width: 24px;
+    height: 24px;
+    
+    
+    
+}
+
+.twitterlogo svg {
+    background-color: var(--main-background-color-1);
+    
+}
+
+.facebooklogo {
+    width: 24px;
+    height: 24px;
+
+}
+
+.facebooklogo svg {
+    background-color: var(--main-background-color-1);
+}
+
+
+.itemfooter {
+    display: flex;
+    
+}
+
+.footerfooter{
+
+    width: 1150px;
+    
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+}
+
+
+.footerfooter ul{
+    
+    width: 1000px;
+    height: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    font-family: 'Spotifylight';
+    color: #919496;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;   
+
+}
+
+.itemfooter:hover {
+    color: #1ed760;
+}
+
+.footerp{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.footerp p {
+    color: #919496;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: 'Spotifylight';
+    display: flex;
+    margin-top: 10px;
+}
+
+.footerp a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerp a:hover {
+    color: #1ed760;
+}
+
